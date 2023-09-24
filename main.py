@@ -13,13 +13,18 @@ while True:
         print("Ура! Ты угадал с",Try,"попытки!")
         break
     elif number < numberX:
-        if numberX - number <=10:
+        if numberX - number <= 10:
             print("Mало, но ты близок к отгадке!")
         else:
             print("Слишком мало")
     else:
-        if number - numberX <=10:
+        if number - numberX <= 10:
             print("Много, но ты близок к отгадке!")
         else:
             print("Слишком много")
     Try += 1
+
+if Try > 10:
+    print("Попробуй справиться быстрее!")
+else:
+    print("Молодец! Быстро справился!")
